@@ -1,0 +1,23 @@
+server:
+  port: 9040
+spring:
+  application:
+    name: redamancy-admin
+  cloud:
+    nacos:
+      server-addr: 47.97.61.96:8848
+      config:
+        #    nacos命名空间
+        namespace: d7299b01-55f2-4ef6-9cbd-1015585dd840
+        extension-configs:
+          - data-id: common.yml
+            group: DEV_GROUP
+            refresh: true
+          - data-id: security.yml
+            group: SECURITY_GROUP
+            refresh: true
+  main:
+    allow-circular-references: true
+feign:
+  okhttp:
+    enabled: true

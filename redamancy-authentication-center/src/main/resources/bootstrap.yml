@@ -1,0 +1,18 @@
+server:
+  port: 9010
+spring:
+  application:
+    name: redamancy-authentication-center
+  cloud:
+    nacos:
+      server-addr: 47.97.61.96:8848
+      config:
+        #    nacos命名空间
+        namespace: d7299b01-55f2-4ef6-9cbd-1015585dd840
+        extension-configs:
+          - data-id: common.yml
+            group: DEV_GROUP
+            refresh: true
+          - data-id: wx-api.yml
+            group: AUTH_GROUP
+            refresh: true

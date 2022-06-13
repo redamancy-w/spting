@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "minio",
+      "type": "icu.redamancy.common.properties.MinioProperties",
+      "sourceType": "icu.redamancy.common.properties.MinioProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "minio.accesskey",
+      "type": "java.lang.String",
+      "sourceType": "icu.redamancy.common.properties.MinioProperties"
+    },
+    {
+      "name": "minio.bucketname",
+      "type": "java.lang.String",
+      "sourceType": "icu.redamancy.common.properties.MinioProperties"
+    },
+    {
+      "name": "minio.endpoint",
+      "type": "java.lang.String",
+      "sourceType": "icu.redamancy.common.properties.MinioProperties"
+    },
+    {
+      "name": "minio.secretkey",
+      "type": "java.lang.String",
+      "sourceType": "icu.redamancy.common.properties.MinioProperties"
+    }
+  ],
+  "hints": []
+}

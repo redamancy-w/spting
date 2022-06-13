@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: redamancy-staticresource-support
+  main:
+    allow-circular-references: true
+  cloud:
+    nacos:
+      server-addr: 47.97.61.96:8848
+      config:
+        namespace: d7299b01-55f2-4ef6-9cbd-1015585dd840
+        extension-configs:
+          - data-id: common.yml
+            group: DEV_GROUP
+            refresh: true
+          - data-id: security.yml
+            group: SECURITY_GROUP
+            refresh: true
+          - data-id: minioconfig.yml
+            group: MINIO_GROUP
+            refresh: true
+          - data-id: aliyunory.yml
+            group: ORC_GROUP
+            refresh: true
+server:
+  port: 9030

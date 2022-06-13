@@ -1,0 +1,37 @@
+server:
+  port: 9020
+spring:
+  application:
+    name: redamancy-cloud
+  cloud:
+    nacos:
+      server-addr: 47.97.61.96:8848
+      config:
+        #    nacos命名空间
+        namespace: d7299b01-55f2-4ef6-9cbd-1015585dd840
+        extension-configs:
+          - data-id: common.yml
+            group: DEV_GROUP
+            refresh: true
+          - data-id: security.yml
+            group: SECURITY_GROUP
+            refresh: true
+          - data-id: minioconfig.yml
+            group: MINIO_GROUP
+            refresh: true
+          - data-id: aliyunory.yml
+            group: ORC_GROUP
+            refresh: true
+  main:
+    allow-circular-references: true
+dubbo:
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://47.97.61.96:8848
+  cloud:
+    subscribed-services: redamancy-staticresource-support
+feign:
+  okhttp:
+    enabled: true

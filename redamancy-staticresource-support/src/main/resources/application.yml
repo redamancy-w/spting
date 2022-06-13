@@ -1,0 +1,11 @@
+dubbo:
+  scan:
+    base-packages: icu.redamancy.redamancystaticresourcesupport.core.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: spring-cloud://47.97.61.96:8848
+  application:
+    name: redamancy-staticresource-support
+    id: redamancy-staticresource-support
