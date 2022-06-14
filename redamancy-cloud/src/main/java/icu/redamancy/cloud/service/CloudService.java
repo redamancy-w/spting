@@ -499,6 +499,16 @@ public class CloudService {
 
         return  cycleOrderMaterialsBo(orderList);
     }
+    public List<OrderBO> getOrder_home(){
+
+        String id = ParsingUserJwtInfo.GetParsingUserJwtInfo().getUserId();
+
+        EntityUser user = getUser(id);
+
+        List<Order> orderList = orderDaoService.lambdaQuery().eq(Order::getHousenumberid,user.getHousenumber()).list();
+
+        return  cycleOrderMaterialsBo(orderList);
+    }
 
     @Resource
     private PictureDaoServiceImpl pictureDaoService;
@@ -507,7 +517,21 @@ public class CloudService {
 
         List<OrderBO> orderBOList = orderList_DB.stream().map(v->{
 
+            UserBO userBO = new UserBO();
+
+            HouseNumber houseNumber = houseNumberDaoService.lambdaQuery().eq(HouseNumber::getId,v.getHousenumberid()).one();
+            userBO.setHousenumber(Long.valueOf(houseNumber.getHousNumber()));
+            Unit unit = unitDaoService.lambdaQuery().eq(Unit::getId,houseNumber.getUnit()).one();
+            userBO.setUnit(unit.getUnit());
+
+            EntityUser user = getUser(String.valueOf(v.getUserid()));
+
+            userBO.setName(user.getName());
+            userBO.setAvatarUrl(user.getAvatarUrl());
+
             OrderBO orderBO = new OrderBO();
+            orderBO.setUserBO(userBO);
+
             BeanUtils.copyProperties(v,orderBO);
             List<Long> id = JSON.parseArray(v.getMaterialsListId(),Long.class);
 

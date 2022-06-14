@@ -141,8 +141,12 @@ public class CloudController {
 
     @GetMapping(value = "userOrder")
     public Result getOrder(String type){
+        return Result.one("order",cloudService.getOrder()).success();
+    }
 
-        return Result.one("order",cloudService.getOrder());
+    @GetMapping(value = "homeOrder")
+    public Result getOrder_home(){
+        return Result.one("order",cloudService.getOrder_home()).success();
     }
 
     @GetMapping(value = "my")

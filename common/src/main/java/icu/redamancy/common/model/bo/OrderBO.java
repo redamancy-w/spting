@@ -16,4 +16,6 @@ public class OrderBO extends Order {
 
     private List<OrderMaterialsBo> materialsBOList;
 
+    private UserBO userBO;
+
 }
