@@ -25,6 +25,7 @@ import icu.redamancy.common.model.pojo.auth.EntityUser;
 import icu.redamancy.common.model.pojo.cloud.*;
 import icu.redamancy.common.model.pojo.picture.Picture;
 import icu.redamancy.common.utils.jjwt.ParsingUserJwtInfo;
+import io.swagger.models.auth.In;
 import lombok.val;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.BeanUtils;
@@ -109,13 +110,13 @@ public class AdminServiceImpl implements AdminService {
     }
     
     @Override
-    public Result addMaterial(Materials material, MultipartFile[] file) throws IOException {
+    public Result addMaterial(String id, Materials material, MultipartFile[] file) throws IOException {
         String userId = ParsingUserJwtInfo.GetParsingUserJwtInfo().getUserId();
 
-        
         List<Long> idList = pictureClient.addPicture(objectName, userId, file);
         String idJson = objectMapper.writeValueAsString(idList);
         material.setImageList(idJson);
+        material.setTitleId(Long.valueOf(id));
         int insert = materialsMapper.insert(material);
         if (insert > 0){
             return Result.success(null);
@@ -210,9 +211,9 @@ public class AdminServiceImpl implements AdminService {
     }
 
     @Override
-    public Result updateOrder(Long id) {
+    public Result updateOrder(Long id, Integer state) {
         int update = orderMapper.update(null,
-                new LambdaUpdateWrapper<Order>().eq(Order::getId, id).set(Order::getState, 1));
+                new LambdaUpdateWrapper<Order>().eq(Order::getId, id).set(Order::getState,state ));
         if (update > 0){
             return Result.success("审核通过");
         }

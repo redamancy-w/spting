@@ -64,9 +64,9 @@ public class AdminController {
      * @throws IOException
      */
     @PostMapping("material/addMaterial")
-    public Result addMaterial(Materials material, MultipartFile[] file) throws IOException {
+    public Result addMaterial(String titleId,Materials material, MultipartFile[] file) throws IOException {
 
-        return adminService.addMaterial(material,file);
+        return adminService.addMaterial( titleId,material,file);
     }
 
     /**
@@ -152,8 +152,8 @@ public class AdminController {
      * @return
      */
     @PostMapping("order/updateOrder/{id}")
-    public Result updateOrder(@PathVariable("id") Long id){
-        return adminService.updateOrder(id);
+    public Result updateOrder(@PathVariable("id") Long id,@RequestParam("state")Integer state){
+        return adminService.updateOrder(id,state);
     }
 
     /**

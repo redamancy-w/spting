@@ -581,4 +581,8 @@ public class CloudService {
                 .lambdaPut("userinfo",userBO)
                 .lambdaPut("houseInfo",this.getHouseNumberBo(userId));
     }
+
+    public Result getTitle(){
+        return Result.one("title",materialsTitleDaoService.list()).success();
+    }
 }
