@@ -25,6 +25,7 @@ import icu.redamancy.common.model.pojo.auth.EntityUser;
 import icu.redamancy.common.model.pojo.cloud.*;
 import icu.redamancy.common.model.pojo.picture.Picture;
 import icu.redamancy.common.utils.jjwt.ParsingUserJwtInfo;
+import lombok.val;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.BeanFactory;
@@ -33,6 +34,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ObjectUtils;
 import org.springframework.web.multipart.MultipartFile;
+import springfox.documentation.spring.web.json.Json;
 
 import javax.annotation.Resource;
 import java.io.IOException;
@@ -229,6 +231,15 @@ public class AdminServiceImpl implements AdminService {
         List<MaterialVO> collect = materialList.stream().map(v -> {
             MaterialVO materialVO = new MaterialVO();
             BeanUtils.copyProperties(v, materialVO);
+            List<Picture> pictures;
+
+            if (!ObjectUtils.isEmpty(v.getImageList()) && !v.getImageList().equals("null")) {
+                List<Long> id = JSON.parseArray(v.getImageList(),Long.class);
+
+                pictures = pictureService.listByIds(id);
+                materialVO.setFilePath(pictures.get(0).getFilepath());
+            }
+
             return materialVO;
         }).collect(Collectors.toList());
         return Result.success(collect);

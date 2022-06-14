@@ -22,4 +22,6 @@ public class MaterialVO {
     private Integer soldNumber;
 
     private String imageList;
+
+    private String filePath;
 }
