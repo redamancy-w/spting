@@ -10,11 +10,13 @@ import lombok.Data;
  */
 @Data
 public class UserBO {
+    private Long id;
 
     private Integer unit;
 
     private String name;
 
+    private Long createTime;
     /**
      * 用户名称
      */
