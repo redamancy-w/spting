@@ -24,7 +24,7 @@ public class ParameterCollection {
      * 登录类型
      * 微信授权登录
      */
-    public static final String WX_LOGIN = "wxLogin";
+    public static final String WX_LOGIN = "wx";
 
     /**
      * 微信登录授权类型

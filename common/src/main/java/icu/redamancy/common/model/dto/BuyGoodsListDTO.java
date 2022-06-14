@@ -32,4 +32,8 @@ public class BuyGoodsListDTO {
     private String soldNumber;
 
     private String titleId;
+
+    private String number;
+
+    private String filePath;
 }

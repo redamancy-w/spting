@@ -40,6 +40,7 @@ public class KiteUserDetailsService implements UserDetailsService {
         HttpServletRequest request = ((ServletRequestAttributes) Objects.requireNonNull(RequestContextHolder.getRequestAttributes())).getRequest();
         String login_type = request.getHeader(LOGIN_TYPE);
 
+
         EntityUser entityUser = null;
 
         if (login_type.equals("wx")){
