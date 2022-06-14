@@ -1,7 +1,7 @@
 package icu.redamancy.common.utils.exceptionhandling;
 
 import icu.redamancy.common.utils.result.ResultCode;
-import jdk.jfr.DataAmount;
+
 import lombok.Data;
 
 /**

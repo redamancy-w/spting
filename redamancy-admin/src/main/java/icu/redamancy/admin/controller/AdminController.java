@@ -20,7 +20,7 @@ public class AdminController {
     /**
      * 审批申请
      * @param id 审批表的id
-     * @param state user表state： 0-未申报 1-未批改 2-绿码 3-红
+     * @param state user表state： 0-未提交 1-绿 2-红 3-未审批
      * @return
      */
     @PostMapping("declare/updateDeclare/{id}/{state}")
@@ -146,9 +146,34 @@ public class AdminController {
         return adminService.getDeclareTime();
     }
 
-    @PostMapping("material/processMaterial/{id}")
-    public Result processMaterial(@PathVariable("id") Long id){
-        return adminService.processMaterial(id);
+    /**
+     * 物资申请表的审批
+     * @param id
+     * @return
+     */
+    @PostMapping("order/updateOrder/{id}")
+    public Result updateOrder(@PathVariable("id") Long id){
+        return adminService.updateOrder(id);
+    }
+
+    /**
+     * 物资申请表
+     * @return
+     */
+    @PostMapping("order/getOrder")
+    public Result getOrder(){
+        return adminService.getOrder();
+    }
+
+
+
+    /**
+     * 获取单元门牌
+     * @return
+     */
+    @PostMapping("unit/getUnit")
+    public Result getUnit(){
+        return adminService.getUnit();
     }
 
 

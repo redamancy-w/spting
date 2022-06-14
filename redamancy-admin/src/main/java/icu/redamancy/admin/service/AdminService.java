@@ -5,7 +5,6 @@ import icu.redamancy.common.model.pojo.cloud.Materials;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.Map;
 
 public interface AdminService {
     Result updateDeclare(Long id, int state);
@@ -30,5 +29,10 @@ public interface AdminService {
 
     Result updateUserById(Long userId, Integer state);
 
-    Result processMaterial(Long id);
+    Result updateOrder(Long id);
+
+    Result getUnit();
+
+    Result getOrder();
+
 }

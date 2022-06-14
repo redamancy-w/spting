@@ -14,20 +14,20 @@ import icu.redamancy.common.model.bo.UserBO;
 import icu.redamancy.common.model.dao.auth.UserDaoServiceImpl;
 import icu.redamancy.common.model.dao.auth.mapper.UserMapper;
 import icu.redamancy.common.model.dao.cloud.DeclareDaoServiceImpl;
+import icu.redamancy.common.model.dao.cloud.OrderDaoServiceImpl;
 import icu.redamancy.common.model.dao.cloud.mapper.DeclareMapper;
 import icu.redamancy.common.model.dao.cloud.mapper.MaterialsMapper;
+import icu.redamancy.common.model.dao.cloud.mapper.OrderMapper;
 import icu.redamancy.common.model.dao.cloud.service.HouseNumberService;
 import icu.redamancy.common.model.dao.cloud.service.UnitService;
 import icu.redamancy.common.model.dao.picture.service.PictureService;
 import icu.redamancy.common.model.pojo.auth.EntityUser;
-import icu.redamancy.common.model.pojo.cloud.EntityDeclare;
-import icu.redamancy.common.model.pojo.cloud.HouseNumber;
-import icu.redamancy.common.model.pojo.cloud.Materials;
-import icu.redamancy.common.model.pojo.cloud.Unit;
+import icu.redamancy.common.model.pojo.cloud.*;
 import icu.redamancy.common.model.pojo.picture.Picture;
 import icu.redamancy.common.utils.jjwt.ParsingUserJwtInfo;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -57,7 +57,7 @@ public class AdminServiceImpl implements AdminService {
     @Autowired
     private ObjectMapper objectMapper;
 
-    @Autowired
+    @Resource
     private MaterialsMapper materialsMapper;
 
     @Autowired
@@ -81,6 +81,12 @@ public class AdminServiceImpl implements AdminService {
     @Autowired
     private UnitService unitService;
 
+    @Resource
+    private OrderDaoServiceImpl orderDaoService;
+
+    @Resource
+    private OrderMapper orderMapper;
+
     private int updateUser(Long userId, Integer state){
         int update = userMapper.update(null,
                 new UpdateWrapper<EntityUser>().eq("id", userId).set("state", state));
@@ -90,8 +96,7 @@ public class AdminServiceImpl implements AdminService {
     @Override
     public Result updateDeclare(Long id, int state) {
 
-        String userId = ParsingUserJwtInfo.GetParsingUserJwtInfo().getUserId();
-        int updateUser = updateUser(Long.valueOf(userId), state);
+        int updateUser = updateUser(id, state);
         int updateDeclare = declareMapper.update(null,
                 new UpdateWrapper<EntityDeclare>().eq("id", id).set("state", 1));
         if (updateUser > 0 && updateDeclare >0){
@@ -178,9 +183,44 @@ public class AdminServiceImpl implements AdminService {
         }
     }
 
+
+
     @Override
-    public Result processMaterial(Long id) {
-        return null;
+    public Result getUnit() {
+        List<EntityUser> entityUsers = userMapper.selectList(new LambdaQueryWrapper<>());
+        List<UnitVO> collect = entityUsers.stream().filter(v -> v.getState() != 0).map(v -> {
+            UnitVO unitVO = new UnitVO();
+            BeanUtils.copyProperties(v, unitVO);
+
+            Long houseNumberId = v.getHousenumber();
+            HouseNumber houseNumberById = houseNumberService.getById(houseNumberId);
+
+            Long unitId = houseNumberById.getUnit();
+            Unit unitById = unitService.getById(unitId);
+
+            unitVO.setHouseNumber(Integer.valueOf(houseNumberById.getHousNumber()));
+            unitVO.setUnit(unitById.getUnit());
+
+            return unitVO;
+        }).collect(Collectors.toList());
+
+        return Result.success(collect);
+    }
+
+    @Override
+    public Result updateOrder(Long id) {
+        int update = orderMapper.update(null,
+                new LambdaUpdateWrapper<Order>().eq(Order::getId, id).set(Order::getState, 1));
+        if (update > 0){
+            return Result.success("审核通过");
+        }
+        return Result.fail(400,"该id无对应审核数据");
+    }
+
+    @Override
+    public Result getOrder() {
+        List<Order> orders = orderMapper.selectList(new LambdaQueryWrapper<>());
+        return Result.success(orders);
     }
 
     @Override

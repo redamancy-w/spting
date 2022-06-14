@@ -2,7 +2,7 @@ package icu.redamancy.common.utils.exceptionhandling;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import icu.redamancy.common.utils.result.ResultCode;
-import jdk.jfr.DataAmount;
+
 import lombok.Data;
 
 import java.io.Serializable;

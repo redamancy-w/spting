@@ -9,9 +9,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MaterialVO {
 
+    private Long id;
+
     private String name;
 
-    private String price;
+    private Integer price;
 
     private Integer number;
 
