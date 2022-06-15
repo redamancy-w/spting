@@ -3,6 +3,8 @@ package icu.redamancy.admin.controller;
 import icu.redamancy.admin.service.AdminService;
 import icu.redamancy.admin.utils.Result;
 import icu.redamancy.common.model.pojo.cloud.Materials;
+import icu.redamancy.common.utils.exceptionhandling.BaseException;
+import icu.redamancy.common.utils.result.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -58,15 +60,17 @@ public class AdminController {
 
     /**
      * 添加物资
-     * @param material 物资
-     * @param file 图片
      * @return
      * @throws IOException
      */
     @PostMapping("material/addMaterial")
-    public Result addMaterial(String titleId,Materials material, MultipartFile[] file) throws IOException {
-
-        return adminService.addMaterial( titleId,material,file);
+    public Result addMaterial(String titleId, @RequestParam(name = "name") String name, @RequestParam(name = "price") Integer price, @RequestParam(name = "number") Integer number, @RequestParam(name = "limitNumber") Integer limitNumber, @RequestParam MultipartFile[] file) throws IOException {
+        Materials material = new Materials();
+        material.setName(name);
+        material.setPrice(price);
+        material.setNumber(number);
+        material.setLimitNumber(limitNumber);
+        return adminService.addMaterial(titleId, material, file);
     }
 
     /**
@@ -178,6 +182,13 @@ public class AdminController {
 
 
 
+    @PostMapping("deletematerials")
+    public Result getDeleteMaterials(@RequestParam("id")Long id){
+        if (adminService.deleteMaterials(id)){
+            return Result.success(null);
+        }
+        throw new BaseException(ResultCode.FEEDBACK);
+    }
 
 
 }

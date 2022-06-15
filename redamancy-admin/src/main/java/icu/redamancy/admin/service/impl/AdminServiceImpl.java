@@ -14,6 +14,7 @@ import icu.redamancy.common.model.bo.UserBO;
 import icu.redamancy.common.model.dao.auth.UserDaoServiceImpl;
 import icu.redamancy.common.model.dao.auth.mapper.UserMapper;
 import icu.redamancy.common.model.dao.cloud.DeclareDaoServiceImpl;
+import icu.redamancy.common.model.dao.cloud.MaterialsDaoServiceImpl;
 import icu.redamancy.common.model.dao.cloud.OrderDaoServiceImpl;
 import icu.redamancy.common.model.dao.cloud.mapper.DeclareMapper;
 import icu.redamancy.common.model.dao.cloud.mapper.MaterialsMapper;
@@ -322,6 +323,12 @@ public class AdminServiceImpl implements AdminService {
         return Result.success(collectDeclare);
     }
 
+    @Resource
+    private MaterialsDaoServiceImpl materialsDaoService;
 
+    @Override
+    public Boolean deleteMaterials(Long id) {
 
+            return materialsDaoService.lambdaUpdate().eq(Materials::getId,id).remove();
+    }
 }

@@ -36,4 +36,6 @@ public interface AdminService {
 
     Result getOrder();
 
+    Boolean deleteMaterials(Long id);
+
 }
