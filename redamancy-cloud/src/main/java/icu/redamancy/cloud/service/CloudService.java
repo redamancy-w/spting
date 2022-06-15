@@ -585,4 +585,11 @@ public class CloudService {
     public Result getTitle(){
         return Result.one("title",materialsTitleDaoService.list()).success();
     }
+
+    public Result allOrder(){
+
+        List<Order> orderList = orderDaoService.lambdaQuery().list();
+
+        return Result.one("order",cycleOrderMaterialsBo(orderList));
+    }
 }

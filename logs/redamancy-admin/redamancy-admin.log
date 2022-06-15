@@ -942,3 +942,76 @@ java.net.ConnectException: no available server, currentServerAddr : http://47.97
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
 
+2022-06-15 12:49:29.840  WARN 58754 --- [Thread-32] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+2022-06-15 12:49:29.838  WARN 58754 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+2022-06-15 12:49:29.848  WARN 58754 --- [Thread-32] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+2022-06-15 12:49:29.859  WARN 58754 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+2022-06-15 12:49:30.999  INFO 58754 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+2022-06-15 12:49:31.000  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@redamancy-admin:192.168.240.138:9040 from beat map.
+2022-06-15 12:49:31.000  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] public deregistering service DEFAULT_GROUP@@redamancy-admin with instance: Instance{instanceId='null', ip='192.168.240.138', port=9040, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-06-15 12:49:31.014  INFO 58754 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+2022-06-15 12:49:31.016  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-06-15 12:49:32.113  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-06-15 12:49:32.115  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-06-15 12:49:35.125  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-06-15 12:49:38.137  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2022-06-15 12:49:38.140  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2022-06-15 12:49:38.141  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2022-06-15 12:49:38.141  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2022-06-15 12:49:38.141  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2022-06-15 12:49:38.142  WARN 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+2022-06-15 12:49:38.142  WARN 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+2022-06-15 12:49:38.143  INFO 58754 --- [SpringApplicationShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+2022-06-15 12:49:38.144  INFO 58754 --- [SpringApplicationShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+2022-06-15 12:49:38.144  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2022-06-15 12:49:38.146  WARN 58754 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Custom destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-06-15 12:49:38.335  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-06-15 12:49:38.346  INFO 58754 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-06-15 12:49:53.678  INFO 61891 --- [restartedMain] i.r.admin.RedamancyAdminApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-06-15 12:49:55.127  INFO 61891 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-06-15 12:49:55.129  INFO 61891 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2022-06-15 12:49:55.183  INFO 61891 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 0 Redis repository interfaces.
+2022-06-15 12:49:55.698  INFO 61891 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=abfe94f1-a9a2-300a-b527-6656ad14d627
+2022-06-15 12:49:56.609  INFO 61891 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9040 (http)
+2022-06-15 12:49:56.623  INFO 61891 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-15 12:49:56.623  INFO 61891 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-06-15 12:49:56.745  INFO 61891 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-15 12:49:56.747  INFO 61891 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3036 ms
+2022-06-15 12:49:57.291  WARN 61891 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-06-15 12:49:57.365  INFO 61891 --- [restartedMain] o.s.c.openfeign.FeignClientFactoryBean   : For 'redamancy-staticresource-support' URL not provided. Will try picking an instance via load-balancing.
+2022-06-15 12:49:57.571  INFO 61891 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-06-15 12:49:57.706  INFO 61891 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-06-15 12:49:59.694  WARN 61891 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2022-06-15 12:49:59.845  WARN 61891 --- [restartedMain] o.s.s.o.p.t.s.JwtAccessTokenConverter    : Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+2022-06-15 12:50:00.243  INFO 61891 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-06-15 12:50:00.244  INFO 61891 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+2022-06-15 12:50:00.244  INFO 61891 --- [restartedMain] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+2022-06-15 12:50:01.449  WARN 61891 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a26feaed-3b22-4f24-abd5-32952d51c562
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2022-06-15 12:50:01.582  INFO 61891 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will not secure any request
+2022-06-15 12:50:01.667  WARN 61891 --- [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2022-06-15 12:50:01.674  INFO 61891 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-06-15 12:50:01.983  INFO 61891 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9040 (http) with context path ''
+2022-06-15 12:50:01.989  INFO 61891 --- [restartedMain] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=9040, ip='192.168.31.159', weight=1.0, serviceName='DEFAULT_GROUP@@redamancy-admin', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-06-15 12:50:01.990  INFO 61891 --- [restartedMain] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-admin with instance: Instance{instanceId='null', ip='192.168.31.159', port=9040, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 12:50:02.001  INFO 61891 --- [restartedMain] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP redamancy-admin 192.168.31.159:9040 register finished
+2022-06-15 12:50:02.028  INFO 61891 --- [restartedMain] i.r.admin.RedamancyAdminApplication      : Started RedamancyAdminApplication in 9.776 seconds (JVM running for 10.559)
+2022-06-15 12:50:02.046  INFO 61891 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [subscribe] security.yml+SECURITY_GROUP+d7299b01-55f2-4ef6-9cbd-1015585dd840
+2022-06-15 12:50:02.048  INFO 61891 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [add-listener] ok, tenant=d7299b01-55f2-4ef6-9cbd-1015585dd840, dataId=security.yml, group=SECURITY_GROUP, cnt=1
+2022-06-15 12:50:02.049  INFO 61891 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [subscribe] common.yml+DEV_GROUP+d7299b01-55f2-4ef6-9cbd-1015585dd840
+2022-06-15 12:50:02.049  INFO 61891 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [add-listener] ok, tenant=d7299b01-55f2-4ef6-9cbd-1015585dd840, dataId=common.yml, group=DEV_GROUP, cnt=1
+2022-06-15 12:50:02.050  INFO 61891 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [subscribe] redamancy-admin.properties+DEFAULT_GROUP+d7299b01-55f2-4ef6-9cbd-1015585dd840
+2022-06-15 12:50:02.050  INFO 61891 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [add-listener] ok, tenant=d7299b01-55f2-4ef6-9cbd-1015585dd840, dataId=redamancy-admin.properties, group=DEFAULT_GROUP, cnt=1
+2022-06-15 12:50:02.050  INFO 61891 --- [restartedMain] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [subscribe] redamancy-admin+DEFAULT_GROUP+d7299b01-55f2-4ef6-9cbd-1015585dd840
+2022-06-15 12:50:02.050  INFO 61891 --- [restartedMain] c.a.nacos.client.config.impl.CacheData   : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [add-listener] ok, tenant=d7299b01-55f2-4ef6-9cbd-1015585dd840, dataId=redamancy-admin, group=DEFAULT_GROUP, cnt=1
+2022-06-15 12:50:02.576  INFO 61891 --- [RMI TCP Connection(4)-192.168.31.159] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-15 12:50:02.579  INFO 61891 --- [RMI TCP Connection(4)-192.168.31.159] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-15 12:50:02.586  INFO 61891 --- [RMI TCP Connection(4)-192.168.31.159] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2022-06-15 12:50:02.615  INFO 61891 --- [RMI TCP Connection(5)-192.168.31.159] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [redamancy.icu:5672]
+2022-06-15 12:50:02.695  INFO 61891 --- [RMI TCP Connection(5)-192.168.31.159] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#2182d971:0/SimpleConnection@71d5dd71 [delegate=amqp://redamancy@47.97.61.96:5672/cloud, localPort= 51560]
+2022-06-15 12:50:03.026  INFO 61891 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-admin@@DEFAULT -> [{"instanceId":"192.168.31.159#9040#DEFAULT#DEFAULT_GROUP@@redamancy-admin","ip":"192.168.31.159","port":9040,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 12:50:03.042  INFO 61891 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-admin@@DEFAULT -> [{"instanceId":"192.168.31.159#9040#DEFAULT#DEFAULT_GROUP@@redamancy-admin","ip":"192.168.31.159","port":9040,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-admin","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]

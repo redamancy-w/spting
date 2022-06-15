@@ -154,6 +154,11 @@ public class CloudController {
         return cloudService.getMy();
     }
 
+    @GetMapping(value = "allOrder")
+    public Result allOrder(){
+        return cloudService.allOrder();
+    }
+
     @GetMapping(value = "materialsTitle")
     public Result getTitle(){
         return cloudService.getTitle();
