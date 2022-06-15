@@ -121,3 +121,1221 @@ Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL:
 	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
 	... 14 common frames omitted
 
+2022-06-15 00:47:36.588  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655224268892, new-t: 0
+2022-06-15 00:47:36.605  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(2) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 00:47:36.606  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655224268988, new-t: 0
+2022-06-15 00:47:36.606  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(2) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 00:47:36.610  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 00:47:36.610  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 00:47:38.620  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 01:05:39.694  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:05:39.694  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:05:39.696  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:05:39.697  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:21:57.684  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 01:22:01.609  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:22:01.616  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:22:01.706  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:22:01.709  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:40:01.130 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 01:40:01.133 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 01:40:01.146 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 01:40:01.160 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 01:56:31.758  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(2) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:56:31.761  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 01:56:33.190  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 01:56:33.848  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 01:56:33.851  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 02:14:24.038  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 02:14:24.050  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 02:31:44.243  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 02:31:46.905  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 02:31:46.908  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.2.153#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.2.153","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 02:31:46.911  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 03:04:51.098  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 03:39:55.280  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655233493621, new-t: 0
+2022-06-15 03:39:55.287  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 03:39:55.289  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 03:39:58.561  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 03:55:54.679 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 03:55:54.679 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 03:55:54.681 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 03:55:54.682 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 03:55:56.730  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655234560111, new-t: 0
+2022-06-15 03:55:56.732  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 03:55:56.734  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 03:55:58.784  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 03:55:58.787  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 04:11:23.255  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 04:11:24.096  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 04:11:24.102  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 04:45:32.450  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 05:03:24.479  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655238545630, new-t: 0
+2022-06-15 05:03:24.480  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 05:03:24.481  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 05:03:28.420  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 05:38:45.955  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 05:38:46.035  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 05:38:46.037  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 05:56:16.883 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 05:56:16.884 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 05:56:16.887 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 05:56:16.890 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 05:56:18.894  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655242726159, new-t: 0
+2022-06-15 05:56:18.897  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 05:56:18.903  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 05:56:18.916  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 05:56:18.966  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655242726197, new-t: 0
+2022-06-15 05:56:18.966  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 05:56:18.967  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 06:12:28.870  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 06:12:28.875  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 06:12:28.947  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 06:12:28.956  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 06:27:43.766  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 06:59:48.598  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 07:15:00.439  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655246617796, new-t: 0
+2022-06-15 07:15:00.439  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:15:00.441  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 07:15:00.497  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655246617692, new-t: 0
+2022-06-15 07:15:00.498  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:15:00.498  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 07:15:00.650  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 07:15:02.523  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:15:02.525  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:15:02.600  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:15:02.600  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:31:38.727  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 07:48:57.964  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655248502820, new-t: 0
+2022-06-15 07:48:57.965  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:48:57.970  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 07:48:57.980  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655248502751, new-t: 0
+2022-06-15 07:48:57.981  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 07:48:57.984  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 07:48:59.447 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 07:48:59.452 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 07:48:59.459 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 07:48:59.467 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 08:04:47.593  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 08:36:57.697  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 08:53:28.778  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 08:53:28.779  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 08:53:28.806  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 08:53:28.806  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 09:11:25.210  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 09:26:40.465  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 09:26:40.468  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 09:26:42.526  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 09:26:42.528  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 09:26:42.972 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 09:26:42.973 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 09:26:42.975 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 09:26:42.976 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 09:42:56.347  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655256400672, new-t: 0
+2022-06-15 09:42:56.348  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 09:42:56.349  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 09:42:56.417  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 10:00:17.540  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655256402792, new-t: 0
+2022-06-15 10:00:17.540  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:00:17.541  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 10:00:21.636  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:00:21.642  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:00:23.750  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:00:23.753  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:17:42.733  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 10:33:58.978  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655258424012, new-t: 0
+2022-06-15 10:33:58.979  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:33:58.980  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center -> []
+2022-06-15 10:34:01.312  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 10:50:09.274  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : out of date data received, old-t: 1655258421891, new-t: 0
+2022-06-15 10:50:09.275  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 10:50:09.276  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> []
+2022-06-15 11:06:36.256  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 11:06:38.022  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:06:38.033  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:22:19.341  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(2) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:22:19.345  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:22:21.362 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 11:22:21.369 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 11:22:21.372 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 11:22:21.376 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 11:22:25.094  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:22:25.106  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:39:21.959  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 11:55:17.163  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 11:55:17.168  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center@@DEFAULT -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 12:10:56.348  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 12:10:57.561  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.43.16#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.43.16","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 12:10:57.566  INFO 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@redamancy-authentication-center -> [{"instanceId":"192.168.240.138#9010#DEFAULT#DEFAULT_GROUP@@redamancy-authentication-center","ip":"192.168.240.138","port":9010,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-06-15 12:23:14.989 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_292]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_292]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:15.050 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:15.059 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:15.060 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+2022-06-15 12:23:15.068  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@redamancy-authentication-center
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:17.102 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:17.120 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:17.126 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:17.127 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+2022-06-15 12:23:17.127  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@redamancy-authentication-center
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:19.586 ERROR 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:433) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:167) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 14 common frames omitted
+
+2022-06-15 12:23:19.600 ERROR 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:433) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:167) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 14 common frames omitted
+
+2022-06-15 12:23:19.631 ERROR 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:433) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:167) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 14 common frames omitted
+
+2022-06-15 12:23:19.633 ERROR 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/beat failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+2022-06-15 12:23:19.635 ERROR 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [CLIENT-BEAT] failed to send beat: {"port":9010,"ip":"192.168.240.138","weight":1.0,"serviceName":"DEFAULT_GROUP@@redamancy-authentication-center","cluster":"DEFAULT","metadata":{"preserved.register.source":"SPRING_CLOUD"},"scheduled":false,"period":5000,"stopped":false}, code: 500, msg: failed to req API:/nacos/v1/ns/instance/beat after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/beat?app=unknown&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&namespaceId=public&port=9010&clusterName=DEFAULT&ip=192.168.240.138
+2022-06-15 12:23:20.746 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:20.753 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:20.758 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:20.759 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+2022-06-15 12:23:20.759  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@redamancy-authentication-center
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:21.148 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:21.153 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:21.159 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:21.160 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+2022-06-15 12:23:21.161  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@redamancy-authentication-center
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=DEFAULT
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:22.803 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:22.819 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:22.827 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+
+java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.reflect.GeneratedConstructorAccessor85.newInstance(Unknown Source) ~[na:na]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_292]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1950) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1945) ~[na:1.8.0_292]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1944) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1514) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getBody(JdkHttpClientResponse.java:60) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handleError(AbstractResponseHandler.java:51) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:44) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:483) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+Caused by: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1900) ~[na:1.8.0_292]
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1498) ~[na:1.8.0_292]
+	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480) ~[na:1.8.0_292]
+	at com.alibaba.nacos.common.http.client.response.JdkHttpClientResponse.getStatusCode(JdkHttpClientResponse.java:75) ~[nacos-common-1.4.1.jar:na]
+	at com.alibaba.nacos.common.http.client.handler.AbstractResponseHandler.handle(AbstractResponseHandler.java:43) ~[nacos-common-1.4.1.jar:na]
+	... 16 common frames omitted
+
+2022-06-15 12:23:22.828 ERROR 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [47.97.61.96:8848], code: 500, msg: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+2022-06-15 12:23:22.829  WARN 54492 --- [com.alibaba.nacos.client.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@redamancy-authentication-center
+
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([47.97.61.96:8848]) tried: java.io.IOException: Server returned HTTP response code: 502 for URL: http://47.97.61.96:8848/nacos/v1/ns/instance/list?app=unknown&healthyOnly=false&namespaceId=public&clientIP=127.0.0.1&serviceName=DEFAULT_GROUP%40%40redamancy-authentication-center&udpPort=49266&clusters=
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:378) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:460) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:23.854 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 12:23:23.856 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 12:23:23.858 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:23:23.860 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:34:28.825  INFO 54492 --- [com.alibaba.nacos.naming.beat.sender] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] public registering service DEFAULT_GROUP@@redamancy-authentication-center with instance: Instance{instanceId='null', ip='192.168.240.138', port=9010, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@redamancy-authentication-center', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-06-15 12:35:04.862 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 12:35:04.863 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 12:35:04.865 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:35:04.868 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:36:21.445 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://47.97.61.96:8848， err : Read timed out
+2022-06-15 12:36:21.449 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://47.97.61.96:8848
+2022-06-15 12:36:21.451 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : [fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] [check-update] get changed dataId exception
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) [nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) [nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+
+2022-06-15 12:36:21.452 ERROR 54492 --- [com.alibaba.nacos.client.Worker.longPolling.fixed-47.97.61.96_8848-d7299b01-55f2-4ef6-9cbd-1015585dd840] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+
+java.net.ConnectException: no available server, currentServerAddr : http://47.97.61.96:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:68) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:441) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:408) ~[nacos-client-1.4.1.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:596) ~[nacos-client-1.4.1.jar:na]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511) [na:1.8.0_292]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180) [na:1.8.0_292]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_292]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_292]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_292]
+

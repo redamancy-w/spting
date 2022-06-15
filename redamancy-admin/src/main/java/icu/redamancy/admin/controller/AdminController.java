@@ -23,8 +23,8 @@ public class AdminController {
      * @param state user表state： 0-未提交 1-绿 2-红 3-未审批
      * @return
      */
-    @PostMapping("declare/updateDeclare/{id}/{state}")
-    public Result updateDeclare(@PathVariable("id") Long id, @PathVariable("state") Integer state){
+    @PostMapping("declare/updateDeclare")
+    public Result updateDeclare(@RequestParam("id") Long id, @RequestParam("state") Integer state){
 
         return adminService.updateDeclare(id, state);
     }
@@ -50,8 +50,8 @@ public class AdminController {
      * @param userId 用户id
      * @return
      */
-    @PostMapping("user/updateUser/{userId}/{state}")
-    public Result updateUserById(@PathVariable("state") Integer state, @PathVariable("userId") Long userId){
+    @PostMapping("user/updateUser")
+    public Result updateUserById(@RequestParam("state") Integer state, @RequestParam("userId") Long userId){
 
         return adminService.updateUserById(userId, state);
     }
@@ -101,8 +101,8 @@ public class AdminController {
      * @param number 物资数量
      * @return
      */
-    @PostMapping("material/updateMaterial/{id}/{price}/{number}")
-    public Result updateMaterial(@PathVariable("id") Long id,@PathVariable("price") Integer price, @PathVariable("number") Integer number){
+    @PostMapping("material/updateMaterial")
+    public Result updateMaterial(@RequestParam("id") Long id,@RequestParam("price") Integer price, @RequestParam("number") Integer number){
 
         return adminService.updateMaterial(id, price, number);
     }
@@ -151,8 +151,8 @@ public class AdminController {
      * @param id
      * @return
      */
-    @PostMapping("order/updateOrder/{id}")
-    public Result updateOrder(@PathVariable("id") Long id,@RequestParam("state")Integer state){
+    @PostMapping("order/updateOrder")
+    public Result updateOrder(@RequestParam("id") Long id,@RequestParam("state")Integer state){
         return adminService.updateOrder(id,state);
     }
 
@@ -175,9 +175,6 @@ public class AdminController {
     public Result getUnit(){
         return adminService.getUnit();
     }
-
-
-
 
 
 
