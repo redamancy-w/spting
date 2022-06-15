@@ -304,19 +304,16 @@ public class AdminServiceImpl implements AdminService {
         List<EntityDeclare> entityDeclares = declareMapper.selectList(
                 new LambdaQueryWrapper<EntityDeclare>()
                         .eq(EntityDeclare::getState, 1)
-                        .select(EntityDeclare::getName, EntityDeclare::getUpdateTime)
+                        .select(EntityDeclare::getUserid,EntityDeclare::getName, EntityDeclare::getUpdateTime)
                         .orderByDesc(EntityDeclare::getUpdateTime));
-
-        List<EntityUser> entityUsers = userMapper.selectList(new LambdaQueryWrapper<>());
 
         List<DeclareTimeVO> collectDeclare = entityDeclares.stream().map(v -> {
             DeclareTimeVO declareTimeVO = new DeclareTimeVO();
             BeanUtils.copyProperties(v, declareTimeVO);
-            List<EntityUser> collectUser = entityUsers.stream()
-                    .filter(entityUser -> entityUser.getName().equals(v.getName()))
-                    .collect(Collectors.toList());
-            Integer state = collectUser.get(0).getState();
-            declareTimeVO.setState(state);
+
+            EntityUser u =  userDaoService.lambdaQuery().eq(EntityUser::getId,v.getUserid()).one();
+
+            declareTimeVO.setState(u.getState());
 
             return declareTimeVO;
 
