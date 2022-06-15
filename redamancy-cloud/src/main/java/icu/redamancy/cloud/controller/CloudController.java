@@ -130,7 +130,9 @@ public class CloudController {
     private RedisTemplate<String, Object> redisTemplate;
 
     @PostMapping(value = "buyGoods")
-    public Result buyGoods(@RequestBody()List<BuyGoodsListDTO> buyGoodsListDTOS) throws InterruptedException {
+    public Result buyGoods(@RequestBody List<BuyGoodsListDTO> buyGoodsListDTOS) throws InterruptedException {
+
+
 
         Boolean isOk = cloudService.BuyGoods(buyGoodsListDTOS);
         if (isOk){

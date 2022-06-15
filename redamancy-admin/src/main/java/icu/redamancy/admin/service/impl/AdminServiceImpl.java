@@ -142,7 +142,7 @@ public class AdminServiceImpl implements AdminService {
             if (!ObjectUtils.isEmpty(v.getPictureList()) && !v.getPictureList().equals("null")) {
                 List<Long> id = JSON.parseArray(v.getPictureList(), Long.class);
                 List<Picture> pictureList = pictureService.listByIds(id);
-                declareBo.setPictureList(String.valueOf(pictureList));
+                declareBo.setImageList(pictureList);
             }
 
             return declareBo;
